@@ -1,0 +1,224 @@
+<DOCTYPE html!>
+<meta charset="8-UTF">
+<head>
+       <link rel="stylesheet" href="C:\Users\TANMAY SHINDE\Desktop\folder/ol.css">
+        <title>Leva Patidar site</title>
+        <h1> Registration Form </h1>
+                <script type="text/javascript">
+
+
+function required()
+{
+var empt = document.registration.fname.value;
+if (empt.indexOf('!@#$%^&*.')<=0)
+{
+window.alert("Please enter first name");
+//fname.focus()
+return false;
+}
+var empt1 = document.registration.mname.value;
+if (empt1.indexOf('!@#$%^&*.')<=0)
+{
+window.alert("Please enter middle name");
+//empt1.focus();
+return false;
+}
+var empt2 = document.forms["registration"]["lname"].value;
+if (empt2indexOf('!@#$%^&*.')<=0)
+{
+window.alert("Please enter last name");
+//empt2.focus();
+return false;
+}
+
+var g = document.forms["registration"]["gname"].value;
+if (g == "")
+{
+window.alert("Please select gender");
+
+return false;
+}
+var email = document.registration.email.value;
+			if(email.indexOf('@')<=0){
+				alert('Invalid your Email Address');
+				return false;
+			}     
+			if ((email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.')) {
+				alert('Invalid your Email Address');
+				return false;
+			}
+var empt3 = document.forms["registration"]["bname"].value;
+if (empt3.indexOf('!@#$%^&*.')<=0)
+{
+window.alert("Please enter birth name");
+//empt3.focus();
+return false;
+}
+var empt4 = document.forms["registration"]["dname"].value;
+if (empt4 == "")
+{
+window.alert("Please enter date of the birth");
+//empt4.focus();
+return false;
+}
+var empt5 = document.forms["registration"]["tname"].value;
+if (empt5 == "")
+{
+window.alert("Please enter time of the birth");
+//empt5.focus();
+return false;
+}
+var empt6 = document.forms["registration"]["cname"].value;
+if (empt6 == "")
+{
+window.alert("Please enter colour");
+//empt6.focus();
+return false;
+}
+var empt7 = document.forms["registration"]["Blood Group"].value;
+if (empt7 == "")
+{
+window.alert("Please enter blood Group");
+//empt7.focus();
+return false;
+}
+return true;
+}
+</script>
+<link rel = "stylesheet" href = "C:\Users\TANMAY SHINDE\Desktop\web application learning/gh.css"
+</head>
+<body>
+<form name="registration" onsubmit="return required(); ;" action="success.html">     
+          <table class="box" align="center" border : solid>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type=text maxlength="15"   placeholder "Name" name = "fname" style="background-color: #C1C1FF"></td>
+                </tr>
+            <tr>
+                    <td>
+                        Middle Name:-
+                    </td>
+                    <td>
+                       <input type="text" maxlength ="15" placeholder "Name" name = "mname" style="background-color: #C1C1FF" >
+                    </td>
+                </tr>
+                     <tr>
+                    <td>
+                        Last Name:-
+                    </td>
+                    <td>
+                       <input type="text" maxlength ="15"  placeholder "Name" name = "lname"style="background-color: #C1C1FF">
+                    </td>
+                   </tr>
+				    <tr>
+                    <td>
+                        Gender:-
+                    </td>
+                    <td>
+			           <input type="radio" value="Male"  placeholder "Male" name = "gname" >
+					Male
+					   <input type="radio" value="Female"  placeholder "Female" name = "gname" >
+					Female
+                    </td>
+                   </tr>
+				    <tr>
+                    <td>
+                        Email address:-
+                    </td>
+                    <td>
+                       <input type="text" placeholder "Email Address" name = "email"style="background-color: #C1C1FF">
+                    </td>
+                   </tr>
+                <tr>
+                    <td>
+                        Birth Name:-
+                    </td>
+                    <td>
+                       <input type="text" maxlength ="15"  placeholder "Name" name = "bname"style="background-color: #C1C1FF">
+                    </td>
+                </tr>
+                <tr>                    
+           
+             <td>
+                     Date Of birth:-
+               </td>
+                <td>
+                       <input type=date  placeholder "Date" name = "dname"style="background-color: #C1C1FF">
+                  </td>
+                </tr>
+           <tr>                    
+           
+             <td>
+                     Time Of birth:-
+               </td>
+                <td>
+                       <input type=time  placeholder "Time" name = "tname"style="background-color: #C1C1FF">
+                  </td>
+                </tr>
+            <tr>                    
+           
+             <td>
+                     Colour:-
+               </td>
+                <td>
+                       <input type=color placeholder "Colour" name = "cname"style="background-color: #C1C1FF">
+                  </td>
+                </tr>
+              <tr>                    
+           
+             <td>
+                     Blood Group:-
+                 <td>
+                  <!--<input type=blood-group placeholder "blood group" name = "">-->
+                         <select class="term" name="Blood Group" id="blood group"style="background-color: #C1C1FF">
+						
+						  <option value="O+"style="background-color: C9FFE5">O+</option>
+						  <option value="O-"style="background-color: C9FFE5">O-</option>
+						  <option value="A+"style="background-color: C9FFE5">A+</option>
+						  <option value="A-"style="background-color: C9FFE5">A-</option>
+						  <option value="B+"style="background-color: C9FFE5">B+</option>
+						  <option value="B-"style="background-color: C9FFE5">B-</option>
+						  <option value="AB+"style="background-color: C9FFE5">AB+</option>
+						  <option value="AB-"style="background-color: C9FFE5">AB-</option>
+						  </select>
+           <tr>
+             <td>
+                     Height:
+					 <td>
+					  <!-- <input type="text" placeholder "Ft" name = "" >--> 
+					  <select name="Height" id="height"style="background-color: #C1C1FF">
+						  <option value="1">1</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5</option>
+						  <option value="6">6</option>
+						</select>
+						Ft
+                      <!-- <input type="text" placeholder "inch" name = "" > -->
+					  <select name="Height" id="height"style="background-color: #C1C1FF">
+						  <option value="1">1</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5</option>
+						  <option value="6">6</option>
+						  <option value="7">7</option>
+						  <option value="8">8</option>
+						  <option value="9">9</option>
+						  <option value="10">10</option>
+						  <option value="11">11</option>
+						  <option value="12">12</option>
+						</select>
+						inch
+                  </td>
+                </tr> 
+               <tr>                           
+                <td>
+                       <input type="submit" placeholder "submit" value = "submit" onclick="ValidateEmail(document.registration.ename">
+                  </td>
+                </tr>
+</table>
+</form>
+</body>
+</html>
